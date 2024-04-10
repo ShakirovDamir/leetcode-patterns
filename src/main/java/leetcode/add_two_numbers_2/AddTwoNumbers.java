@@ -6,22 +6,9 @@ package leetcode.add_two_numbers_2;
  * Explanation: 342 + 465 = 807.
  */
 
-public class AddTwoNumbers {
+class AddTwoNumbers {
 
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {};
-        ListNode(int val) {
-            this.val = val;
-        }
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode(0);
         ListNode pointer1 = l1;
         ListNode pointer2 = l2;
